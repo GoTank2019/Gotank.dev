@@ -114,7 +114,8 @@ class RegisterController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:admins',
             'password' => 'required|min:8',
-            'foto_admin' => 'required'
+            'api_token' => [],
+            'foto_admin' => 'required',
         ]);
 
         $admin = $admin->create([
